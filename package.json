@@ -1,0 +1,90 @@
+{
+  "name": "git-quick",
+  "displayName": "Git Quick",
+  "publisher": "gudasoft",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "description": "Quick commit/restore current file with a shortcut and prompt for a message",
+  "version": "1.0.2",
+  "engines": {
+    "vscode": "^1.89.0"
+  },
+  "activationEvents": [],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "git-quick-current-file.quick-commit",
+        "title": "Git: Quick Commit"
+      },
+      {
+        "command": "git-quick-current-file.quick-checkout",
+        "title": "Git: Quick Checkout"
+      },
+      {
+        "command": "git-quick-current-file.quick-restore",
+        "title": "Git: Quick Restore"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "pnpm run package",
+    "compile": "pnpm run check-types && pnpm run lint && node esbuild.js",
+    "watch": "npm-run-all -p watch:*",
+    "watch:esbuild": "node esbuild.js --watch",
+    "watch:tsc": "tsc --noEmit --watch --project tsconfig.json",
+    "package": "pnpm run check-types && pnpm run lint && node esbuild.js --production",
+    "compile-tests": "tsc -p . --outDir out",
+    "watch-tests": "tsc -p . -w --outDir out",
+    "pretest": "pnpm run compile-tests && pnpm run compile && pnpm run lint",
+    "check-types": "tsc --noEmit",
+    "lint": "eslint src --ext ts",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.6",
+    "@types/node": "18.x",
+    "@types/vscode": "^1.89.0",
+    "@typescript-eslint/eslint-plugin": "^7.7.1",
+    "@typescript-eslint/parser": "^7.7.1",
+    "@vscode/test-cli": "^0.0.9",
+    "@vscode/test-electron": "^2.3.9",
+    "esbuild": "^0.20.2",
+    "eslint": "^8.57.0",
+    "npm-run-all": "^4.1.5",
+    "typescript": "^5.4.5"
+  },
+  "extensionDependencies": [
+    "vscode.git"
+  ],
+  "extensionKind": [
+    "ui",
+    "workspace"
+  ],
+  "categories": [
+    "Other"
+  ],
+  "pricing": "Free",
+  "author": {
+    "name": "Gudasoft"
+  },
+  "bugs": {
+    "url": "https://github.com/gudasoft/vscode-quick-git/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gudasoft/vscode-quick-git"
+  },
+  "homepage": "https://gudasoft.com/products/vscode-quick-git",
+  "keywords": [
+    "commit",
+    "quick",
+    "git",
+    "quick commit",
+    "git commit",
+    "git quick commit"
+  ],
+  "icon": "/icon.png",
+  "dependencies": {
+    "@vscode/vsce": "^2.26.1"
+  }
+}

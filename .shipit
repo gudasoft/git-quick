@@ -1,0 +1,14 @@
+host='none'
+path='/home/ec2-user'
+
+[deploy:local]
+npm install
+npm install @vscode/vsce
+# vsce login gudasoft # paste token
+npx @vscode/vsce publish
+
+
+[deploy]
+
+[status]
+
