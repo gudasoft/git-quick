@@ -68,13 +68,13 @@
     "name": "Gudasoft"
   },
   "bugs": {
-    "url": "https://github.com/gudasoft/vscode-quick-git/issues"
+    "url": "https://github.com/gudasoft/git-quick/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gudasoft/vscode-quick-git"
+    "url": "https://github.com/gudasoft/git-quick"
   },
-  "homepage": "https://gudasoft.com/products/vscode-quick-git",
+  "homepage": "https://gudasoft.com/products/git-quick",
   "keywords": [
     "commit",
     "quick",
