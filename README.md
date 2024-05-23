@@ -29,3 +29,7 @@ It was fast and you can commit in the middle of your work without getting out of
 Enjoy the quick commit and restore and in the future more quick commands!
 
 Check other great projects from [Gudasoft](https://www.gudasoft.com)
+
+## Known problems
+
+On new unsaved file - it asks you to save it, instead of closing it.
