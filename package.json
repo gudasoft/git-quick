@@ -4,7 +4,7 @@
   "publisher": "gudasoft",
   "license": "SEE LICENSE IN LICENSE.md",
   "description": "Quick commit/restore current file with a shortcut and prompt for a message",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "engines": {
     "vscode": "^1.89.0"
   },
