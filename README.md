@@ -32,4 +32,4 @@ Check other great projects from [Gudasoft](https://www.gudasoft.com)
 
 ## Known problems
 
-On new unsaved file - it asks you to save it, instead of closing it.
+On a new unsaved file - it asks you to save it, instead of closing it.
